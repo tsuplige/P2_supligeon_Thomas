@@ -17,6 +17,29 @@ body {
     border-radius: 30px;
     box-shadow: 1px 1px 12px #C1C7C7;*/
     }
+#header {
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header img {
+    display: flex;
+    justify-content: space-around;
+}
+
+#header ul {
+    display: flex;
+    flex-basis: 30%;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#lien_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 #HbtMarseille {
     display: flex;
@@ -28,16 +51,25 @@ body {
     flex-direction: column;
     background: #F2F2F2;
     border-radius: 30px;
+    flex-basis: 65%;
 
     margin: 1% 1%;
     padding: 1em;
 }
 
 .img-hebergement {
-    height: 200px ;
-    width: 300px;
+    height: 133px ;
+    width: 200px;
     /*border-radius: 30px;*/
     border-radius: 8% 8% 0% 0%;
+
+}
+
+.img-populaire {
+    height: 133px ;
+    width: 200px;
+    /*border-radius: 30px;*/
+    /*border-radius: 8% 8% 0% 0%;*/
 
 }
 
@@ -56,6 +88,8 @@ body {
 *#Populaires {  
     display: flex;
     flex-direction: column;
+    flex-basis: 35%;
+
     
     background: #F2F2F2;
     border-radius: 30px;
@@ -64,12 +98,21 @@ body {
     padding: 1em;
 }
 
-/*div,article {
+div,article {
     border: solid;
     border-color: blue;
-}*/
+}
 
 .bloc_hbt {
+    /*width: 350px;*/
+    border-radius: 30px;
+    padding: 5px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 12px #C1C7C7;
+
+}
+
+.bloc_popu {
     
     border-radius: 30px;
     padding: 5px;
@@ -77,6 +120,7 @@ body {
     box-shadow: 1px 1px 12px #C1C7C7;
 
 }
+
 /*.texthbt {
     flex-basis: 45%;
     background: #FFFFFF;
@@ -89,11 +133,13 @@ body {
 }
 .filtre_bouton {
     display: flex;
-    background: #F2F2F2;
+   /* background: #F2F2F2;*/
     border-color:#F2F2F2;
+    border-style: solid;
     border-radius: 30px;
 }
 #filtre {
     display: flex;
     flex-direction:row;
+    justify-content: space-around;
 }
