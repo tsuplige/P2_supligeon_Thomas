@@ -5,17 +5,9 @@
 
 body {
     color:black;
-    /*background-color:#F2F2F2;*/
-    /*background-repeat: repeat;*/
-    /*background-opacity: 0.2;*/
     font-family: 'Raleway';
-
-    margin: 2% 5%;
+    margin: 5% 3%;
     padding: 25px;
-	width: calc(90% - 50px);
-    /*background:whitesmoke;
-    border-radius: 30px;
-    box-shadow: 1px 1px 12px #C1C7C7;*/
     }
 #header {
     display:flex ;
@@ -58,10 +50,6 @@ body {
 }
 
 .img-hebergement {
-    /*height: 133px ;
-    width: 200px;
-    border-radius: 30px;
-    border-radius: 8% 8% 0% 0%;*/
     width: 100%;
     height: 130px;
     border-radius: 15px 15px 0px 0px;
@@ -112,7 +100,7 @@ body {
 */
 .bloc_hbt {
     height: 200px;
-    min-width: 250px;
+    width: 250px;
     border-radius: 20px;
     padding: 5px;
     background: #FFFFFF;
@@ -134,11 +122,6 @@ body {
 
 }
 
-/*.texthbt {
-    flex-basis: 45%;
-    background: #FFFFFF;
-}*/
-
 #footer {
     display: flex;
     flex-direction: row;
@@ -146,7 +129,6 @@ body {
 }
 .filtre_bouton {
     display: flex;
-   /* background: #F2F2F2;*/
     border-color:#F2F2F2;
     border-style: solid;
     border-radius: 30px;
@@ -155,4 +137,43 @@ body {
     display: flex;
     flex-direction:row;
     justify-content: space-around;
+}
+
+#Activite {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-activite {
+    width: 325px;
+    height: 450px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+
+}
+.img-activite2 {
+    width: 100%;
+    height: 190px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+}
+.box-activité {
+    height: 500px;
+    width: 325px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 12px #C1C7C7;
+    margin: 15px;
+}
+.box-activité2 {
+    height: 240px;
+    width: 325px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 12px #C1C7C7;
+    margin: 15px;
 }
