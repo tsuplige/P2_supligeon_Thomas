@@ -6,13 +6,19 @@
 body {
     color:black;
     font-family: 'Raleway';
-    margin: 5% 3%;
-    padding: 25px;
+    margin-left: 3%;
+   /* padding: 25px;*/
     }
 #header {
     display:flex ;
+    
     flex-direction: row;
     justify-content: space-between;
+}
+#footer {
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #header img {
@@ -20,17 +26,38 @@ body {
     justify-content: space-around;
 }
 
-#header ul {
+/*#header ul {
+    display: flex;
+    flex-basis: 30%;
+    list-style: none;
+    justify-content: space-around;
+}*/
+
+#lien_header {
     display: flex;
     flex-basis: 30%;
     list-style: none;
     justify-content: space-around;
 }
 
-#lien_header {
+.linkheader {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+}
+
+.linkheader:hover{
+    border-top: solid #2570e0;
+}
+
+#header_hbt, #header_actvt {
+    color:  black;
+}
+
+#header_log {
+    color: #2570e0;
+    font-weight: bold;
 }
 
 #HbtMarseille {
@@ -131,8 +158,17 @@ body {
     display: flex;
     border-color:#F2F2F2;
     border-style: solid;
-    border-radius: 30px;
+    border-radius: 50px;
+    width: 220px;
+    align-items: center;
+    margin: 10px 10px 0 0;
 }
+
+.filtre_bouton h2 {
+    padding-left: 30%;
+    font-size: 16px;
+}
+
 #filtre {
     display: flex;
     flex-direction:row;
@@ -177,3 +213,20 @@ body {
     box-shadow: 1px 1px 12px #C1C7C7;
     margin: 15px;
 }
+
+#Activite h3 {
+    margin: 5%;
+}
+.bloc_popu h3 {
+    margin: 5%;
+ }
+
+.bloc_hbt h3 {
+   margin: 5%;
+}
+
+/*.texthbt {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}*/
