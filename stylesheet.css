@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+body {
+    color:black;
+    font-family: 'Raleway';
+    margin-left: 5%;
+   /* padding: 25px;*/
+    }
+#header {
+    display:flex ;
+    
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header img {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*#header ul {
+    display: flex;
+    flex-basis: 30%;
+    list-style: none;
+    justify-content: space-around;
+}*/
+
+#lien_header {
+    display: flex;
+    flex-basis: 30%;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.linkheader {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+}
+
+.linkheader:hover{
+    border-top: solid #2570e0;
+    font-weight: bold;
+}
+
+#header_hbt, #header_actvt {
+    color:  black;
+}
+
+#header_log {
+    color: #2570e0;
+    font-weight: bold;
+}
+
+#recherche {
+    margin-bottom: 25px;
+}
+.map{
+    background-color: #f2f2f2;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    margin: 0px;
+    height: 20px;
+}
+
+#input {
+    margin-left: -4px;
+    height: 50px;
+    width: 190px;
+    border-color:#F2F2F2;
+    border-style: solid;
+}
+
+#bouton_shearch {
+    color: cornsilk;
+    border: none;
+    border-radius: 0  15px 15px 0;
+    background-color: #2570e0;
+    height: 50px;
+    width: 105px;
+    margin-left: -4px;
+}
+
+
+
+.filtre_bouton {
+    display: flex;
+    height: 40px;
+    border-color:#F2F2F2;
+    border-style: solid;
+    border-radius: 50px;
+    /*width: 220px;*/
+    align-items: center;
+    /*margin: 10px 10px 0 0;*/
+    /*padding-left: 25px;*/
+    justify-content: space-evenly;
+    padding-right: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.filtre_bouton:hover {
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+.filtre_bouton p {
+    /*padding-left: 30%;*/
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#texte_filtre {
+    display: flex;
+}
+
+#text_filtre p {
+    text-align: center;
+}
+.infologo{
+    border: 2px solid #f2f2f2;
+    padding: 6px;
+    border-radius: 50px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    margin-right: 10px;
+    color: #0065FC;
+}
+
+#filtre {
+    display: flex;
+    flex-direction:row;
+    /*justify-content: space-around;*/
+    text-align: center;
+}
+
+
+.icon_filtre {
+    color: #0065FC;
+    width: 20px;
+    border-radius: 50%;
+    align-items: center;
+    
+}
+
+.icon_content {
+    display: flex;
+    justify-content: center;
+    background: #d4e4fc;
+    height: 40px;
+    /* flex-basis: 40%; */
+    width: 40px;
+    border-radius: 100%;
+    align-items: center;
+    margin-right: 15px;
+    
+}
+
+#HbtMarseille {
+    display: flex;
+   flex-direction: row;
+}
+
+#hebergements {
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 30px;
+    flex-basis: 65%;
+
+    margin: 1% 1%;
+    padding: 1em;
+}
+
+#more {
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.img-hebergement {
+    width: 100%;
+    height: 130px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+
+}
+
+.img-populaire {
+    object-fit: cover;
+    height: 100% ;
+    width: 170px;
+    border-radius: 15% 0% 0% 15%
+
+}
+/*
+#hbrow1 {   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#hbrow2 {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
+
+#hbt-grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.bloc_hbt {
+    height: 220px;
+    width: 250px;
+    border-radius: 20px;
+    padding: 5px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 12px #C1C7C7;
+    margin: 15px;
+
+}
+
+.bloc_hover:hover {
+    background-color: #f8f8f8;
+    box-shadow: 6px 1px 12px #adb3b3;
+    cursor: pointer;
+}
+
+.text_hbt {
+    /*padding: 15px;*/
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_hbt p {
+    /*padding: 15px;*/
+    margin: 0px;
+}
+
+.grade {
+    margin: 0px;
+}
+
+.etoilebleu {
+    margin: 0px;
+    color: #0065FC;
+}
+
+.text_hbt h3 {
+    margin: 0px;
+}
+
+*#Populaires {  
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    justify-content: space-around ;
+
+    
+    background: #F2F2F2;
+    border-radius: 30px;
+
+    margin: 1% 1%;
+    padding: 1em;
+}
+
+/*div,article {
+    border: solid;
+    border-color: blue;
+}
+*/
+
+
+.bloc_popu {
+    
+    WIDTH: 388px;
+    display: flex;
+    height: 160px;
+    border-radius: 30px;
+    padding: 5px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 12px #c1c7c7;
+    margin: 17px;
+
+}
+.text_popu {
+    /*padding: 15px;*/
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logopopu {
+   margin-top: 20px;
+    font-size: 30px;
+}
+
+#title-popu {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0px 15px 0px 18px;
+}
+
+#footer {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #F2F2F2;
+}
+
+ul{
+    list-style: none;
+}
+
+#apropos {
+    margin-left: -130px;
+}
+
+
+#Activite {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-activite {
+    width: 325px;
+    height: 450px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+
+}
+.img-activite2 {
+    width: 100%;
+    height: 190px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+}
+.box-activité {
+    height: 500px;
+    width: 325px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 12px #C1C7C7;
+    margin: 15px;
+}
+.box-activité2 {
+    height: 240px;
+    width: 325px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 12px #C1C7C7;
+    margin: 15px;
+}
+
+#Activite h3 {
+    margin: 5%;
+}
+/*.bloc_popu h3 {
+    margin: 5%;
+ }*/
+
+/*.bloc_hbt h3 {
+   margin: 5%;
+}*/
+
+/*.texthbt {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}*/
