@@ -16,8 +16,6 @@ body {
     justify-content: space-between;
 }
 
-}
-
 #header img {
     display: flex;
     justify-content: space-around;
@@ -383,9 +381,9 @@ ul{
 #Activite h3 {
     margin: 5%;
 }
-.bloc_popu h3 {
-    /*margin: 5%;*/
- }
+/*.bloc_popu h3 {
+    margin: 5%;
+ }*/
 
 /*.bloc_hbt h3 {
    margin: 5%;
