@@ -267,10 +267,10 @@ body {
 *#Populaires {  
     display: flex;
     flex-direction: column;
-    flex-basis: 35%;
     justify-content: space-around ;
 
     
+    /* max-width: 1400px;*/
     background: #F2F2F2;
     border-radius: 30px;
 
@@ -395,3 +395,123 @@ ul{
     flex-direction: column;
     justify-content: left;
 }*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    body{
+        max-width: 1023px;
+        margin-left: 2%;
+    }
+
+    header{
+        max-width: 1023px;
+        width: 96%;
+        margin: auto;
+    }
+    nav {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #lien_header {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-basis: 30%;
+        list-style: none;
+        justify-content: space-around;
+    }
+
+    #lien_header {
+        margin-left: -50px;
+    }
+
+    #HbtMarseille {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #pooulaire {
+        max-width: 42%;
+    }
+
+    .bloc_popu {
+        height: 180px;
+    }
+
+    #hebergements {
+        max-width: 1023px;
+        display: flex;
+        flex-direction: column;
+        background: none;
+        flex-basis: 65%;
+    
+        margin: 1% 1%;
+        padding: 1em;
+    }
+
+    #hbt-grille {
+         display: flex;
+         flex-direction: column;
+    }
+
+    .bloc_hbt {
+        height: 245px;
+        width: 389px;
+        border-radius: 20px;
+        padding: 5px;
+        background: #FFFFFF;
+        box-shadow: 1px 1px 12px #c1c7c7;
+        margin: 15px;
+    
+    }
+
+    .img-hebergement{
+        height: 155px;
+    }
+
+    #Activite {
+        display: flex;
+        flex-direction: column;
+    }
+    #actmars {
+        margin: 17px;
+    }
+    
+
+    .box-activité,  .box-activité2{
+        height: 220px;
+        width: 389px;
+        border-radius: 20px;
+        /*padding: 5px;*/
+        background: #FFFFFF;
+        box-shadow: 1px 1px 12px #c1c7c7;
+        margin: 15px;
+    
+    }
+
+    .img-activite, .img-activite2{
+        width: 100%;
+        height: 170px;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+        display: flex;
+        margin: auto;
+    }
+
+
+    #footer {
+        display: flex;
+        padding-top: 5px;
+        flex-direction: column;
+        justify-content: space-around;
+        background: #F2F2F2;
+        padding-left: 30px;
+        max-width: 1023px;
+    }
+
+    #apropos {
+         margin-left: 0px; 
+    }
+}
