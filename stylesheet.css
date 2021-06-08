@@ -380,7 +380,9 @@ ul{
 }
 
 #Activite h3 {
-    margin: 5%;
+   /* margin: 5%;*/
+    margin-top: 3%;
+    margin-left: 3%;
 }
 /*.bloc_popu h3 {
     margin: 5%;
@@ -395,8 +397,12 @@ ul{
     flex-direction: column;
     justify-content: left;
 }*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    
+}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     
     body{
         max-width: 1023px;
@@ -438,6 +444,7 @@ ul{
 
     .bloc_popu {
         height: 180px;
+        width: inherit;
     }
 
     #hebergements {
@@ -458,7 +465,7 @@ ul{
 
     .bloc_hbt {
         height: 245px;
-        width: 389px;
+        width: inherit;
         border-radius: 20px;
         padding: 5px;
         background: #FFFFFF;
@@ -482,7 +489,8 @@ ul{
 
     .box-activité,  .box-activité2{
         height: 220px;
-        width: 389px;
+        width: inherit;
+        /*width: 389px;*/
         border-radius: 20px;
         /*padding: 5px;*/
         background: #FFFFFF;
@@ -500,15 +508,25 @@ ul{
         margin: auto;
     }
 
+    #Activite h3 {
+        /* margin: 5%; */
+        margin-top: 2%;
+        margin-left: 3%;
+    }
 
-    #footer {
+    /*#footer {
         display: flex;
         padding-top: 5px;
         flex-direction: column;
         justify-content: space-around;
         background: #F2F2F2;
-        padding-left: 30px;
+        padding-left: 58px;
         max-width: 1023px;
+        margin-left: -20px;
+    }*/
+
+    #footer{
+        margin-left: -20px;
     }
 
     #apropos {
