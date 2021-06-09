@@ -82,7 +82,7 @@ body {
     color: cornsilk;
     border: none;
     border-radius: 0  15px 15px 0;
-    background-color: #2570e0;
+    background-color: #0065FC;
     height: 50px;
     width: 105px;
     margin-left: -4px;
@@ -402,7 +402,7 @@ ul{
     flex-direction: column;
     justify-content: left;
 }*/
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     body {
         max-width: 767px;
         }
@@ -416,6 +416,12 @@ ul{
     body{
         max-width: 1024px;
         margin-left: 2%;
+    }
+
+    h2 {
+        font-size: 60px;
+        font-weight: bold;
+        margin-left: 20px;
     }
 
     header{
@@ -433,32 +439,36 @@ ul{
         font-size: 35px;
         padding: 42px;
         text-align: center;
-        border-radius: 15px 0px 0px 15px;
+        border-radius: 20px 0px 0px 20px;
+        /*margin-left: 50px;*/
+        width: 50px;
+        height: 60px;
+        margin-top: -10px;
     }
     
 
     #input {
-        margin-left: -5px;
-        height: 100px;
-        width: 780px;
+       /* margin-left: 65px;*/
+        height: 140px;
+        width: 700px;
         border-color: #F2F2F2;
         border-style: solid;
         padding-top: 35px;
         font-size: 50px;
         padding-left: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 70px;
         font-family: 'Raleway';
     }
 
     #bouton_shearch {    
         color: cornsilk;
         border: none;
-        border-radius: 0 15px 15px 0;
-        background-color: #2570e0;
-        height: 96px;
-        width: 105px;
-        padding-top: 32px;
-        margin-left: -4px;
+        border-radius: 30px;
+        background-color: #0065FC;
+        height: 140px;
+        width: 130px;
+        padding-top: 0px;
+        margin-left: -10px;
     }
     
 
@@ -469,20 +479,20 @@ ul{
 
 
     .bloc_popu {
-        height: 320px;
+        height: 400px;
         width: inherit;
         border-radius: 55px;
         padding: 8px;
     }
 
     .text_popu {
-        /* padding: 15px; */
+       /* padding: 15px; */
         margin: 18px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 30px;
-        margin-top: -40px;
+        font-size: 40px;
+        margin-top: -20px;
     }
 
     .text_popu p{
@@ -490,11 +500,17 @@ ul{
         margin-bottom: 140px;
     }
 
+    #logopopu {
+        margin-top: 60px;
+        font-size: 60px;
+    }
+
     .img-populaire {
         object-fit: cover;
         height: 99%;
-        width: 320px;
-        border-radius: 17% 0% 0% 16%;
+        width: 400px;
+        border-radius: 12% 0% 0% 12%;
+        margin-right: 30px;
     }
 
     #hebergements {
@@ -514,7 +530,7 @@ ul{
     }
 
     .bloc_hbt {
-        height: 450px;
+        height: 500px;
         width: inherit;
         border-radius: 50px;
         padding: 10px;
@@ -525,7 +541,7 @@ ul{
     }
 
     .img-hebergement{
-        height: 65%;
+        height: 70%;
         border-radius: 45px 45px 0px 0px;
     }
 
@@ -544,7 +560,7 @@ ul{
     
 
     .box-activité,  .box-activité2{
-        height: 400px;
+        height: 500px;
         width: inherit;
         /*width: 389px;*/
         border-radius: 50px;
@@ -566,9 +582,9 @@ ul{
 
     #Activite h3 {
         /* margin: 5%; */
-        margin-top: 3%;
+        margin-top: 4%;
         margin-left: 3%;
-        font-size: 30px;
+        font-size: 40px;
     }
 
 
