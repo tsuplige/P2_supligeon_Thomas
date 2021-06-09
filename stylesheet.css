@@ -471,6 +471,21 @@ ul{
         margin-left: -10px;
     }
     
+    #filtre_bouton {
+        display: flex;
+        height: 120px;
+        border-color: #F2F2F2;
+        border-style: solid;
+        border-radius: 50px;
+        /* width: 220px; */
+        align-items: center;
+        /* margin: 10px 10px 0 0; */
+        /* padding-left: 25px; */
+        justify-content: space-evenly;
+        padding-right: 18px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
     #HbtMarseille {
         display: flex;
