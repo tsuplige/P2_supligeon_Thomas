@@ -185,6 +185,11 @@ body {
     font-weight: bold;
 }
 
+#more:hover{
+    text-decoration: underline;
+    color: #0065FC;
+}
+
 .img-hebergement {
     width: 100%;
     height: 130px;
@@ -264,7 +269,7 @@ body {
     margin: 0px;
 }
 
-*#Populaires {  
+#Populaires {  
     display: flex;
     flex-direction: column;
     justify-content: space-around ;
@@ -398,14 +403,18 @@ ul{
     justify-content: left;
 }*/
 @media screen and (min-width: 375px) and (max-width: 767px) {
-    
-}
+    body {
+        max-width: 767px;
+        }
 
+        #Populaires {
+            border-radius: 0px;
+            margin: -10px;
+        }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    
+        
     body{
-        max-width: 1023px;
+        max-width: 1024px;
         margin-left: 2%;
     }
 
@@ -414,19 +423,175 @@ ul{
         width: 96%;
         margin: auto;
     }
-    nav {
-        display: grid;
 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    #lien_header {
+        margin-left: -50px;
+    }
+
+    .map{
+        background-color: #f2f2f2;
+        font-size: 35px;
+        padding: 42px;
+        text-align: center;
+        border-radius: 15px 0px 0px 15px;
     }
     
-    #lien_header {
+
+    #input {
+        margin-left: -5px;
+        height: 100px;
+        width: 780px;
+        border-color: #F2F2F2;
+        border-style: solid;
+        padding-top: 35px;
+        font-size: 50px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        font-family: 'Raleway';
+    }
+
+    #bouton_shearch {    
+        color: cornsilk;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        background-color: #2570e0;
+        height: 96px;
+        width: 105px;
+        padding-top: 32px;
+        margin-left: -4px;
+    }
+    
+
+    #HbtMarseille {
         display: flex;
-        flex-direction: row-reverse;
-        flex-basis: 30%;
-        list-style: none;
-        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+
+
+    .bloc_popu {
+        height: 320px;
+        width: inherit;
+        border-radius: 55px;
+        padding: 8px;
+    }
+
+    .text_popu {
+        /* padding: 15px; */
+        margin: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30px;
+        margin-top: -40px;
+    }
+
+    .text_popu p{
+        margin-top: -15px;
+        margin-bottom: 140px;
+    }
+
+    .img-populaire {
+        object-fit: cover;
+        height: 99%;
+        width: 320px;
+        border-radius: 17% 0% 0% 16%;
+    }
+
+    #hebergements {
+        max-width: 1023px;
+        display: flex;
+        flex-direction: column;
+        background: none;
+        flex-basis: 65%;
+    
+        margin: 1% 1%;
+        padding: 1em;
+    }
+
+    #hbt-grille {
+         display: flex;
+         flex-direction: column;
+    }
+
+    .bloc_hbt {
+        height: 450px;
+        width: inherit;
+        border-radius: 50px;
+        padding: 10px;
+        background: #FFFFFF;
+        box-shadow: 1px 1px 12px #c1c7c7;
+        margin: 15px;
+    
+    }
+
+    .img-hebergement{
+        height: 65%;
+        border-radius: 45px 45px 0px 0px;
+    }
+
+    .text_hbt {
+        /* padding: 15px; */
+        font-size: 31px;
+    }
+
+    #Activite {
+        display: flex;
+        flex-direction: column;
+    }
+    #actmars {
+        margin: 17px;
+    }
+    
+
+    .box-activité,  .box-activité2{
+        height: 400px;
+        width: inherit;
+        /*width: 389px;*/
+        border-radius: 50px;
+        /*padding: 5px;*/
+        background: #FFFFFF;
+        box-shadow: 1px 1px 12px #c1c7c7;
+        margin: 15px;
+    
+    }
+
+    .img-activite, .img-activite2{
+        width: 100%;
+        height: 75%;
+        border-radius: 45px 45px 0px 0px;
+        object-fit: cover;
+        display: flex;
+        margin: auto;
+    }
+
+    #Activite h3 {
+        /* margin: 5%; */
+        margin-top: 3%;
+        margin-left: 3%;
+        font-size: 30px;
+    }
+
+
+    #footer{
+        margin-left: -20px;
+    }
+
+    #apropos {
+         margin-left: 0px; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    body{
+        max-width: 1024px;
+        margin-left: 2%;
+    }
+
+    header{
+        max-width: 1023px;
+        width: 96%;
+        margin: auto;
     }
 
     #lien_header {
@@ -438,9 +603,6 @@ ul{
         flex-direction: column-reverse;
     }
 
-    #pooulaire {
-        max-width: 42%;
-    }
 
     .bloc_popu {
         height: 180px;
