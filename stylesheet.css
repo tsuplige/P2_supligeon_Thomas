@@ -20,11 +20,12 @@ body {
 
 #header {
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr;
 }
 
 #header img {
     display: flex;
+    grid-column: 1/4;
     justify-content: space-around;
 }
 
@@ -638,6 +639,40 @@ ul{
 
     #header_log{
         margin-right: 0%;
+        grid-area: 1/2;
+    }
+
+    #header_actvt {
+        border-bottom: solid #f2f2f2;
+        
+        font-weight: bold;
+        margin-left: 0;
+        margin-right:0;
+    }
+
+    #header_hbt {
+        color: #2570e0;
+        border-bottom: solid #2570e0;
+        font-weight: bold;
+        place-items: center;
+        margin-left: 0;
+        margin-right:0;
+    }
+
+    #header img {
+        grid-area: 1/1;
+    }
+
+    #input {
+        width: 70%;
+    }
+
+    button p{
+        visibility: hidden;
+    }
+
+    #bouton_shearch {
+        width: 15%;
     }
 
     #filtre {
