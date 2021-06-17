@@ -609,7 +609,7 @@ ul{
     body{
         max-width: 767px;
        /* margin-left: 2%;*/
-       font-size: 100%;
+       font-size: 176%;
        width: 90%;
     }
 
@@ -633,8 +633,8 @@ ul{
     }
 
     #Populaires {
-        width: 767px;
-        /* width: 4793.75%; */
+        max-width: 767px;
+        width: 135%;
         border-radius: 0;
         margin-left: -43px;
     }
@@ -648,12 +648,13 @@ ul{
     .bloc_popu {
         height: 270px;
         width: inherit;
+        padding: 8px;
     }
 
     .img-populaire {
         object-fit: cover;
         height: 100%;
-        width: 285px;
+        width: 38%;
         border-radius: 9% 0% 0% 9%;
     }
 
@@ -674,18 +675,21 @@ ul{
     }
 
     .bloc_hbt {
-        height: 245px;
-        width: inherit;
-        border-radius: 20px;
+        height: 350px;
+        max-width: 767px;
+        width: 112%;
+        border-radius: 40px;
         padding: 5px;
         background: #FFFFFF;
         box-shadow: 1px 1px 12px #c1c7c7;
-        margin: 15px;
+        margin-top: 10px;
+        margin-left: -21px;
     
     }
 
     .img-hebergement{
-        height: 155px;
+        height: 65%;
+        border-radius: 37px 37px 0px 0px;
     }
 
     #Activite {
@@ -698,21 +702,22 @@ ul{
     
 
     .box-activité,  .box-activité2{
-        height: 220px;
-        width: inherit;
-        /*width: 389px;*/
-        border-radius: 20px;
+        height: 350px;
+        max-width: 767px;
+        width: 112%;
+        border-radius: 40px;
         /*padding: 5px;*/
         background: #FFFFFF;
         box-shadow: 1px 1px 12px #c1c7c7;
-        margin: 15px;
+        margin-top: 10px;
+        margin-left: -21px;
     
     }
 
     .img-activite, .img-activite2{
         width: 100%;
-        height: 170px;
-        border-radius: 15px 15px 0px 0px;
+        height: 80%;
+        border-radius: 37px 37px 0px 0px;
         object-fit: cover;
         display: flex;
         margin: auto;
@@ -735,8 +740,13 @@ ul{
         margin-left: -20px;
     }*/
 
-    #footer{
-        margin-left: -20px;
+    #footer{   
+        margin-left: -40px;
+        max-width: 767px;
+        width: 111%;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-top: 30px;
     }
 
     #apropos {
