@@ -11,11 +11,16 @@ body {
     margin: 0 auto;
    /* padding: 25px;*/
     }
-#header {
+/*#header {
     display:flex ;
     
     flex-direction: row;
     justify-content: space-between;
+}*/
+
+#header {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
 }
 
 #header img {
@@ -101,7 +106,7 @@ body {
     align-items: center;
     /*margin: 10px 10px 0 0;*/
     /*padding-left: 25px;*/
-    justify-content: space-evenly;
+   /* justify-content: space-evenly;*/
     padding-right: 18px;
     margin-right: 10px;
     margin-left: 10px;
@@ -609,7 +614,7 @@ ul{
     body{
         max-width: 767px;
        /* margin-left: 2%;*/
-       font-size: 176%;
+       font-size: 71%;
        width: 90%;
     }
 
@@ -617,6 +622,9 @@ ul{
         max-width: 767px;
         width: 96%;
         margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     /*#lien_header {
@@ -632,9 +640,67 @@ ul{
         margin-right: 0%;
     }
 
+    #filtre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .filtre_bouton {
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+
+    .filtre_bouton p {
+        font-size: 100%;
+    }
+
+    #filtre h2 {
+        margin-left: -165px;
+    }
+
+    #filtre_economique {
+        grid-area: 2/1;
+        width: 12em;
+        margin-right: 70px;
+    }
+
+    #filtre_familial {
+        grid-area: 2/2;
+        width: 9em;
+        margin-right: 39%;
+        margin-left: -53px;
+    }
+
+    #filtre_romantique {
+        grid-area: 3/1;
+        width: 11em;
+        margin-right: 32%;
+    }
+
+    #filtre_animaux {
+        grid-area: 4/1;
+        width: 14em;
+        margin-right: 18%;
+    }
+
+    #texte_filtre {
+        align-items: center ;
+    }
+
+    .infologo {
+        border: 2px solid #f2f2f2;
+        padding: 6px;
+        border-radius: 50px;
+        width: 18px;
+        height: 14px;
+        text-align: center;
+        margin-right: 10px;
+        color: #0065FC;
+    }
     #Populaires {
         max-width: 767px;
-        width: 135%;
+        width: 110%;
         border-radius: 0;
         margin-left: -43px;
     }
@@ -646,9 +712,11 @@ ul{
 
 
     .bloc_popu {
-        height: 270px;
-        width: inherit;
-        padding: 8px;
+        height: 137px;
+        width: 90%;
+        padding: 4px;
+        margin-left: 26px;
+        border-radius: 16px;
     }
 
     .img-populaire {
@@ -675,21 +743,20 @@ ul{
     }
 
     .bloc_hbt {
-        height: 350px;
+        height: 200px;
         max-width: 767px;
-        width: 112%;
-        border-radius: 40px;
+        width: 108%;
+        border-radius: 20px;
         padding: 5px;
         background: #FFFFFF;
         box-shadow: 1px 1px 12px #c1c7c7;
         margin-top: 10px;
         margin-left: -21px;
-    
     }
 
     .img-hebergement{
         height: 65%;
-        border-radius: 37px 37px 0px 0px;
+        border-radius: 16px 16px 0px 0px;
     }
 
     #Activite {
@@ -702,10 +769,10 @@ ul{
     
 
     .box-activité,  .box-activité2{
-        height: 350px;
+        height: 220px;
         max-width: 767px;
         width: 112%;
-        border-radius: 40px;
+        border-radius: 20px;
         /*padding: 5px;*/
         background: #FFFFFF;
         box-shadow: 1px 1px 12px #c1c7c7;
@@ -717,7 +784,7 @@ ul{
     .img-activite, .img-activite2{
         width: 100%;
         height: 80%;
-        border-radius: 37px 37px 0px 0px;
+        border-radius: 16px 16px 0px 0px;
         object-fit: cover;
         display: flex;
         margin: auto;
@@ -740,10 +807,11 @@ ul{
         margin-left: -20px;
     }*/
 
-    #footer{   
-        margin-left: -40px;
+    #footer{
+        
+        margin-left: -24px;
         max-width: 767px;
-        width: 111%;
+        width: 100%;
         flex-direction: column;
         padding-left: 40px;
         padding-top: 30px;
