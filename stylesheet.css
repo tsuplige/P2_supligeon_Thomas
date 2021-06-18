@@ -900,6 +900,7 @@ ul{
 
     .icon_search {
         display : none;
+        font-size: 0px;
     }
 
     #HbtMarseille {
