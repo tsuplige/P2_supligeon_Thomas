@@ -95,6 +95,10 @@ body {
     margin-left: -4px;
 }
 
+.icon_search {
+        display : none;
+    }
+
 
 
 .filtre_bouton {
@@ -888,6 +892,10 @@ ul{
 
     #header_log{
         margin-right: 0%;
+    }
+
+    .icon_search {
+        display : none;
     }
 
     #HbtMarseille {
