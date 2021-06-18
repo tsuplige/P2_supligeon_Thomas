@@ -675,6 +675,10 @@ ul{
         width: 15%;
     }
 
+    #text_search {
+        display : none;
+    }
+
     #filtre {
         display: grid;
         grid-template-columns: 1fr 1fr;
