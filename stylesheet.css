@@ -433,7 +433,9 @@ ul{
     }
 
     #bouton_shearch {
-        width: 15%;
+        width: 50px;
+        border-radius: 30%;
+        margin-left: -15px;
     }
 
     #text_search {
