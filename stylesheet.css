@@ -241,6 +241,11 @@ body {
     color: #0065FC;
 }
 
+.etoilegris {
+    margin: 0px;
+    color: #dfdede;
+}
+
 .text_hbt h3 {
     margin: 0px;
 }
