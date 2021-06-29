@@ -15,6 +15,7 @@ body {
     grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr;
     height: 70px;
     align-content: end;
+    width: 1410px;
 }
 
 #header img {
@@ -34,22 +35,20 @@ body {
 .linkheader {
     display: flex;
     text-decoration: none;
+    color: black;
     align-items: center;
     height: 65px;
     justify-content: center;
 }
 
 .linkheader:hover{
-    border-top: solid #2570e0;
+    color: #0065FC;
+    border-top: solid #0065FC;
     font-weight: bold;
 }
 
-#header_hbt, #header_actvt {
-    color:  black;
-}
-
 #header_log {
-    color: #2570e0;
+    color: #0065FC;
     font-weight: bold;
 }
 
@@ -192,7 +191,7 @@ body {
 
 .img-hebergement {
     width: 100%;
-    height: 130px;
+    height: 55%;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
     display: flex;
@@ -207,7 +206,7 @@ body {
 }
 
 .bloc_hbt {
-    height: 220px;
+    height: 200px;
     width: 250px;
     border-radius: 20px;
     padding: 5px;
@@ -224,7 +223,7 @@ body {
 }
 
 .text_hbt {
-    margin: 18px;
+    margin: 9px 7px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,6 +238,10 @@ body {
 .text_hbt p {
     margin: 0px;
     margin-bottom: 0.2em;
+}
+.grade_popu {
+    margin: 0px;
+    margin-top: 35px;
 }
 
 .grade {
@@ -297,6 +300,10 @@ body {
     justify-content: center;
 }
 
+.text_popu p {
+    margin-top: -15px;
+}
+
 #logopopu {
    margin-top: 20px;
     font-size: 30px;
@@ -315,10 +322,44 @@ body {
 /*Partie Activité*/
 
 #Activite {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: -25px;
+}
+#actmars {
+    margin: 17px;
 }
 
+.box-activité {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.box-activité2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.box-activité3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.box-activité4 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.box-activité5 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.box-activité6 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
 .img-activite {
     width: 325px;
     height: 450px;
@@ -336,7 +377,7 @@ body {
     display: flex;
     margin: auto;
 }
-.box-activité {
+.box-activité_grand {
     height: 500px;
     width: 325px;
     border-radius: 20px;
@@ -344,7 +385,7 @@ body {
     box-shadow: 1px 1px 12px #C1C7C7;
     margin: 15px;
 }
-.box-activité2 {
+.box-activité_petit {
     height: 240px;
     width: 325px;
     border-radius: 20px;
@@ -356,16 +397,24 @@ body {
 #Activite h3 {
     margin-top: 3%;
     margin-left: 3%;
+    margin: 1rem 1rem;
 }
 
 /*Footer*/
 
 #footer {
-    display: flex;
-    padding-top: 10px;
-    flex-direction: row;
-    justify-content: space-around;
     background: #F2F2F2;
+    max-width: 1410px;
+    width: 137%;
+    display: flex;
+}
+
+#text_footer {
+    padding-top: 10px;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    width: inherit;
 }
 
 ul{
@@ -373,7 +422,17 @@ ul{
 }
 
 #apropos {
-    margin-left: -130px;
+   /* margin-left: -130px;*/
+   grid-column: 1/2;
+}
+
+#noshebergements {
+    grid-column: 3/4;
+
+}
+
+#assistance {
+    grid-column: 5/6;
 }
 
 /*version Mobile*/
@@ -524,7 +583,7 @@ ul{
     }
     #Populaires {
         max-width: 767px;
-        width: 95%;
+        width: 94.5%;
         border-radius: 0;
         margin-left: 0px;
     }
@@ -575,8 +634,7 @@ ul{
         padding: 5px;
         background: #FFFFFF;
         box-shadow: 1px 1px 12px #c1c7c7;
-        margin-top: 10px;
-        margin-left: -21px;
+        margin: 12px -18px;
     }
 
     .img-hebergement{
@@ -593,16 +651,14 @@ ul{
     }
     
 
-    .box-activité,  .box-activité2{
-        height: 170px;
+    .box-activité_petit,  .box-activité_grand{
+        height: 200px;
         max-width: 767px;
-        width: 100%;
+        width: 87%;
         border-radius: 20px;
         background: #FFFFFF;
         box-shadow: 1px 1px 12px #c1c7c7;
-        margin-top: 10px;
-        margin-left: 0px;
-    
+        margin: 12px 42px;
     }
 
     .img-activite, .img-activite2{
@@ -619,34 +675,49 @@ ul{
     }
 
     #footer{
-        
-        margin-left: -24px;
         max-width: 767px;
-        width: 97%;
-        flex-direction: column;
-        padding-left: 40px;
-        padding-top: 30px;
+        width: 100%;
+    }
+
+    #text_footer {
+        grid-template-columns: 1fr 0 0 0 0;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        font-size: large;
+        margin-left: 20px;
     }
 
     #apropos {
-         margin-left: 0px; 
-    }
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-left: 0px;
+     }
+     
+     #noshebergements {
+        grid-row: 2/3;
+        grid-column: 1/2;
+     }
+     
+     #assistance {
+        grid-row: 3/4;
+        grid-column: 1/2;
+     }
 
 }
 
 
 /*version tablette*/
 
-@media screen and (min-width: 768px) and (max-width: 1100px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     
     body{
-        max-width: 1100px;
+        max-width: 1024px;
        font-size: 100%;
        width: 90%;
     }
 
     #header{
-        max-width: 1100px;
+        max-width: 1024px;
         width: 96%;
         margin: auto;
     }
@@ -658,6 +729,31 @@ ul{
 
     #header_log{
         margin-right: 0%;
+    }
+
+    #recherche {
+        margin-left: 20%;
+    }
+
+    #input {
+        height: 70px;
+        width: 50%;
+    }
+
+    #bouton_shearch {
+        height: 68px;
+        width: 105px;
+    }
+
+    .map {
+        background-color: #f2f2f2;
+        font-size: 18px;
+        padding: 26px;
+        text-align: center;
+        border-radius: 15px 0px 0px 15px;
+        margin: 0px;
+        margin-top: 10px;
+        height: 20px;
     }
 
     .icon_search {
@@ -675,13 +771,52 @@ ul{
 
     }*/
 
+    #filtre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #filtre h2 {
+        margin-left: -75%;
+    }
+
+    .filtre_bouton {
+        width: 70%;
+    }
+
+    #filtre_economique {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #filtre_familial {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #filtre_romantique {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #filtre_animaux {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+
     .bloc_popu {
         height: 180px;
         width: inherit;
     }
 
+    .text_popu h3{
+        margin-top: -10%;
+    }
+
     #hebergements {
-        max-width: 1100px;
+        max-width: 1024px;
         display: flex;
         flex-direction: column;
         background: none;
@@ -711,15 +846,45 @@ ul{
     }
 
     #Activite {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     #actmars {
         margin: 17px;
     }
+
+    .box-activité {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .box-activité2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .box-activité3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .box-activité4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .box-activité5 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .box-activité6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
     
 
-    .box-activité,  .box-activité2{
+    /*.box-activité_petit,  .box-activité_grand{
         height: 220px;
         width: inherit;
         border-radius: 20px;
@@ -727,7 +892,18 @@ ul{
         box-shadow: 1px 1px 12px #c1c7c7;
         margin: 15px;
     
+    }*/
+
+    .box-activité_petit,  .box-activité_grand{    
+    height: 245px;
+    width: inherit;
+    border-radius: 20px;
+    padding: 0px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 12px #c1c7c7;
+    margin: 15px; 
     }
+
 
     .img-activite, .img-activite2{
         width: 100%;
@@ -741,10 +917,12 @@ ul{
     #Activite h3 {
         margin-top: 2%;
         margin-left: 3%;
+        margin: 1.5rem 1rem;
     }
 
     #footer{
         /*margin-left: -20px;*/
+        width: 100%;
     }
 
     #apropos {
