@@ -708,16 +708,16 @@ ul{
 
 /*version tablette*/
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     
     body{
-        max-width: 1024px;
+        max-width: 1023px;
        font-size: 100%;
        width: 90%;
     }
 
     #header{
-        max-width: 1024px;
+        max-width: 1023px;
         width: 96%;
         margin: auto;
     }
@@ -816,7 +816,7 @@ ul{
     }
 
     #hebergements {
-        max-width: 1024px;
+        max-width: 1023px;
         display: flex;
         flex-direction: column;
         background: none;
