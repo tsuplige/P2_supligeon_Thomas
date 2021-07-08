@@ -832,6 +832,10 @@ ul{
         max-width: 50em;
     }
 
+    .img-populaire {
+        border-radius: 6% 0% 0% 6%;
+    }
+
     .text_popu h3{
         margin-top: -10%;
     }
