@@ -619,10 +619,11 @@ ul{
 
 
     .bloc_popu {
-        height: 137px;
+        height: 148px;
         max-width: 100%;
+        width: 95%;
         padding: 4px;
-        margin-left: 18px;
+        margin-left: 4px;
         border-radius: 16px;
     }
 
@@ -640,25 +641,26 @@ ul{
         background: none;
         flex-basis: 65%;
     
-        margin: 1% 1%;
+        margin: 1% 0%;
         padding: 1em;
     }
 
     #hbt-grille {
          display: flex;
          flex-direction: column;
-         margin-left: 7%;
+         margin-left: 0%;
     }
 
     .bloc_hbt {
         height: 200px;
         max-width: 767px;
-        width: 100%;
+        width: 97%;
         border-radius: 20px;
         padding: 5px;
         background: #FFFFFF;
         box-shadow: 1px 1px 12px #c1c7c7;
-        margin: 1em -1em;
+        margin: 1em auto;
+        /*margin: 1em -1.5em;*/
     }
 
     .img-hebergement{
@@ -671,19 +673,23 @@ ul{
         flex-direction: column;
     }
     #actmars {
-        margin: 17px;
+        margin: 1% 0%;
+        padding: 1%;
+    }
+
+    #actmars h2{
+        margin-left: 1em;
     }
     
 
     .box-activité_petit,  .box-activité_grand{ 
         height: 200px;
         max-width: 767px;
-        width: 95%;
+        width: 92%;
         border-radius: 20px;
         background: #FFFFFF;
         box-shadow: 1px 1px 12px #c1c7c7;
-        margin: 1.2em 1.4em;
-
+        margin: 1.2em 1.9em;
     }
 
     .img-activite, .img-activite2{
@@ -731,6 +737,7 @@ ul{
 
 }
 
+/*version bureau alternative*/
 
 @media screen and (min-width: 1024px) and (max-width: 1220px) {
     body{
